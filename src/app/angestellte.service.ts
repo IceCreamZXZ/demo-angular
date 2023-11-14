@@ -15,7 +15,7 @@ export class AngestellteService {
   }
 
   public addAngestellter(angestellter: Angestellter): Observable<Angestellter> {
-    return this.http.post<Angestellter>(`http://localhost:8080/angestellter/addAngestellte`, angestellter);
+    return this.http.post<Angestellter>(`http://localhost:8080/angestellter/addAngestellter`, angestellter);
   }
 
   public findAngestellterByVorname(vorname: string): Observable<Angestellter> {
